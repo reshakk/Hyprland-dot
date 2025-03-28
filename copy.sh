@@ -30,7 +30,7 @@ get_backup_dirname() {
 	echo "back-up_${timestamp}"
 }
 
-print "Copying dotfiles\n"
+printf "Copying dotfiles\n"
 
 DIRS="
   gedit
