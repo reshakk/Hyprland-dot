@@ -40,6 +40,7 @@ DIRS="
   swaync
   waybar
   wlogout
+  gtk-3.0
 "
 
 for DIR2 in $DIRS; do
