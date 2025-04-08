@@ -90,7 +90,7 @@ for DIR2 in $DIRS; do
 done
 
 mkdir -p ~/Pictures
-cp -r ../wallpapers ~/Pictures/ && { echo "Some wallpapers are copied."; } || { echo "Failed to copy wallpapers."; } 2>&1 | tee -a "$LOG"
+cp -r wallpapers ~/Pictures/ && { echo "Some wallpapers are copied."; } || { echo "Failed to copy wallpapers."; } 2>&1 | tee -a "$LOG"
 chmod +x ~/.config/hypr/scripts/* 2>&1 | tee -a "$LOG"
 
 
