@@ -1,0 +1,33 @@
+{
+
+  //General Settings
+  "layer": "bottom",
+  "position": "top",
+  "margin": 0,
+  "spacing": 0,
+
+  //Load Modules
+  "include": ["~/.config/waybar/modules.json"],
+
+  //Modules Left
+  "modules-left": [
+    "clock",
+    "clock#simpleclock",
+    "hyprland/window"
+  ],
+
+  //Modules Center
+  "modules-center": ["hyprland/workspaces"],
+
+  //Modules Right
+  "modules-right": [
+    "group/hardware",
+    "hyprland/language",
+    "pulseaudio",
+    "network",
+    "tray",
+    "custom/notification",
+    "custom/power"
+  ]
+
+}
