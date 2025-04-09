@@ -39,7 +39,6 @@ DIRS="
   rofi
   swaync
   waybar
-  wlogout
   gtk-3.0
 "
 
