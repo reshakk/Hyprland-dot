@@ -28,11 +28,14 @@ Another dotfiles for Arch+Hyprland
 </details>
 <details>
   <summary>Waybar</summary>
+  
+  - **Inspired by**: https://github.com/brunoanesio/waybar-config   
     
   ![image](https://github.com/reshakk/Arch-dotfiles/blob/main/assets/Waybar.png)
 </details>
 <details>
   <summary>Swaync</summary>
     
+  - **Theme**: https://github.com/catppuccin/swaync
   ![image](https://github.com/reshakk/Arch-dotfiles/blob/main/assets/Swaync.png)
 </details>
