@@ -269,14 +269,15 @@ slider {
   border-radius: 8px;
   border: 1px solid #6c7086;
 }
-/*
+
 .widget-mpris {
-  margin: 0 5px; 
+  margin: 15px 5px 0; 
 }
 
 .widget-mpris .widget-mpris-player {
   background: #313244;
   padding: 7px;
+  border-radius: 8px;
 }
 
 .widget-mpris .widget-mpris-title {
@@ -285,21 +286,6 @@ slider {
 
 .widget-mpris .widget-mpris-subtitle {
   font-size: 0.8rem;
-}
-*/
-.widget-menubar > box > .menu-button-bar > button > label {
-  font-size: 3rem;
-  padding: 0.5rem 2rem;
-}
-
-.widget-menubar > box > .menu-button-bar > :last-child {
-  color: #f38ba8;
-}
-
-.power-buttons button:hover,
-.powermode-buttons button:hover,
-.screenshot-buttons button:hover {
-  background: #313244;
 }
 
 .control-center .widget-label > label {
@@ -328,7 +314,11 @@ slider {
   background: #74c7ec;
 }
 
-.widget-backlight trough highlight {
+.widget-volume trough, .widget-volume highlight, .widget-backlight trough, .widget-backlight highlight  { 
+  border-radius: 8px;
+}
+
+.widget-backlight trough highlight{
   background: #f9e2af;
 }
 
