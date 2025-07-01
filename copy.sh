@@ -33,13 +33,16 @@ get_backup_dirname() {
 printf "Copying dotfiles\n"
 
 DIRS="
+  btop
   gedit
   hypr
   kitty
   rofi
   swaync
   waybar
+  Thunar
   gtk-3.0
+  gtk-4.0
 "
 
 for DIR2 in $DIRS; do
@@ -108,4 +111,4 @@ printf "\n%.0s" {1..4}
 printf "GREAT! Hyprland-Dots is now Loaded & Ready !!!"
 printf "\n%.0s" {1..1}
 printf "HOWEVER I HIGHLY SUGGEST to logout and re-login or better reboot to avoid any issues\n\n"
-
+sleep 4s

@@ -118,7 +118,7 @@
     "hypland/language": {
         "format": "{}",
         "format-en": "ENG",
-        "format-ru": "РУС"
+        "format-ru": "РУС",
     },
     
     //Pulseaudio
