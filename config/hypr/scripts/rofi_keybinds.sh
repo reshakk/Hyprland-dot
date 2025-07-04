@@ -1,15 +1,25 @@
 #!/bin/bash
 
-HYPR_CONF="$HOME/.config/hypr/configs/keybinds.conf"
+HYPR_DIR=("$HOME/.config/hypr/configs")
+HYPR_CONF=("$HYPR_DIR/keyb-hypr.conf" "$HYPR_DIR/keyb-app.conf")
 ROFI_CONF="$HOME/.config/rofi/configs/keybinds.rasi"
 
-# Extract the keybindings from hyprland.conf
-mapfile -t BINDINGS < <(grep '^bind[ =]' "$HYPR_CONF" | \
-    sed 's/^[[:space:]]*bind[ =]\+//; s/[[:space:]]\+/,/g; s/,[[:space:]]*,/,/g' | \
-    awk -F',' '{cmd=""; for(i=3;i<=NF;i++) cmd=cmd $i " "; print "<b>"$1 " + " $2 "</b>  <i>" cmd "</i>"}')
+
+
+all_text=""
+
+for line in "${HYPR_CONF[@]}"; do
+	# Extract the keybindings from hyprland.conf
+	mapfile -t BINDINGS < <(grep '^bind[ =]' "$line" | \
+    	sed 's/^[[:space:]]*bind[ =]\+//; s/[[:space:]]\+/,/g; s/,[[:space:]]*,/,/g' | \
+    	awk -F',' '{cmd=""; for(i=3;i<=NF;i++) cmd=cmd $i " "; print "<b>"$1 " + " $2 "</b>  <i>" cmd "</i>"}')
+	all_text+=$(printf "%s\n" "${BINDINGS[@]}")
+done
+
+echo "$all_text"
 
 # Show menu and get selection
-CHOICE=$(printf '%s\n' "${BINDINGS[@]}" | rofi -dmenu -i -markup-rows -p "Hyprland Keybinds:" -theme ${ROFI_CONF})
+CHOICE=$(printf '%s\n' "${all_text[@]}" | rofi -dmenu -i -markup-rows -p "Hyprland Keybinds:" -theme ${ROFI_CONF})
 
 # Exit if no choice made
 [[ -z "$CHOICE" ]] && exit 0
