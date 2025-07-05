@@ -30,7 +30,13 @@ get_backup_dirname() {
 	echo "back-up_${timestamp}"
 }
 
-printf "Copying dotfiles\n"
+printf "\n%.0s" {1..2}
+echo -e "\e[35m
+        ###############
+         COPY DOTFILES
+        ###############
+\e[0m"
+printf "\n%.0s" {1..1}
 
 DIRS="
   btop
