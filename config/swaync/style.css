@@ -280,6 +280,8 @@ slider {
   border-radius: 8px;
 }
 
+.widget-mpris-player {margin: 0px 5px; }
+
 .widget-mpris .widget-mpris-title {
   font-size: 1.2rem;
 }
