@@ -68,7 +68,8 @@
     // System
     "custom/system": {
         "format": "",
-        "tooltip": false
+        "tooltip": false,
+    	"on-click": "missioncenter"
     },
 
     // CPU
