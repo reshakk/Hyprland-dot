@@ -1,27 +1,26 @@
 require("lazy").setup({
-  -- { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-  "tpope/vim-commentary",
-  "mattn/emmet-vim",
-  "nvim-tree/nvim-tree.lua",
-  "nvim-tree/nvim-web-devicons",
-  "nvim-treesitter/nvim-treesitter",
-  "lewis6991/gitsigns.nvim",
-  "preservim/vimux",
-  "christoomey/vim-tmux-navigator",
-  "tpope/vim-fugitive",
-  "tpope/vim-surround",
-  "stevearc/oil.nvim",
-  -- completion
+  -- Autocompletion core
   "hrsh7th/nvim-cmp",
   "hrsh7th/cmp-nvim-lsp",
+  "neovim/nvim-lspconfig",
   "L3MON4D3/LuaSnip",
-  "saadparwaiz1/cmp_luasnip",
   "rafamadriz/friendly-snippets",
+  "saadparwaiz1/cmp_luasnip",
   "williamboman/mason.nvim",
   "williamboman/mason-lspconfig.nvim",
-  "neovim/nvim-lspconfig", 
-  {
-    "nvim-telescope/telescope.nvim", tag = "0.1.4",
-    dependencies = { "nvim-lua/plenary.nvim" }
-  },
+
+  -- File tree
+  "nvim-tree/nvim-tree.lua",
+  "nvim-tree/nvim-web-devicons",
+
+  -- Git integration
+  "lewis6991/gitsigns.nvim",
+  "tpope/vim-fugitive",
+
+  -- Commenting
+  "tpope/vim-commentary",
+
+  "nvim-treesitter/nvim-treesitter",
+  "norcalli/nvim-colorizer.lua"
 })
+
