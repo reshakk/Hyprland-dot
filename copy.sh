@@ -47,6 +47,7 @@ DIRS="
   swaync
   waybar
   Thunar
+  nvim
   gtk-3.0
   gtk-4.0
 "
