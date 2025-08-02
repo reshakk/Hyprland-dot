@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { "bashls", "pyright", "cssls", "html", "omnisharp" }
+  ensure_installed = { "bashls", "pyright", "cssls", "html", "omnisharp", "lua_ls", "ts_ls" }
 })
 
 -- local lspconfig = require("lspconfig")

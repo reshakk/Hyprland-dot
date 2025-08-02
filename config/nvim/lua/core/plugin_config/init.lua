@@ -6,4 +6,5 @@ require("core.plugin_config.lsp_config")
 require("core.plugin_config.gitsigns")
 require("core.plugin_config.nvimtree_config")
 require("core.plugin_config.colorizer")
+require("core.plugin_config.telescope")
 

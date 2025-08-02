@@ -20,7 +20,16 @@ require("lazy").setup({
   -- Commenting
   "tpope/vim-commentary",
 
+  -- Tmux
+  "preservim/vimux",
+  "christoomey/vim-tmux-navigator",
+
   "nvim-treesitter/nvim-treesitter",
-  "norcalli/nvim-colorizer.lua"
+  "norcalli/nvim-colorizer.lua",
+
+  {
+    "nvim-telescope/telescope.nvim", tag = "0.1.4",
+    dependencies = { "nvim-lua/plenary.nvim" }
+  },
 })
 

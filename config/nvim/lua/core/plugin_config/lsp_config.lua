@@ -1,7 +1,3 @@
-require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "ts_ls" }
-})
-
 local lspconfig = require('lspconfig')
 
 local lsp_defaults = lspconfig.util.default_config

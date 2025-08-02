@@ -20,10 +20,12 @@ window#waybar {
 
 
 #workspaces button {
+  all: initial;
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
   /* background-color: #181825; */
+  transition: all 0.3s linear;
   background-color: #1e1e2e;
   color: #cdd6f4;
 }
