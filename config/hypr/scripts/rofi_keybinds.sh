@@ -1,7 +1,7 @@
 #!/bin/bash
 
 HYPR_DIR=("$HOME/.config/hypr/configs")
-HYPR_CONF=("$HYPR_DIR/keyb-hypr.conf" "$HYPR_DIR/keyb-app.conf")
+HYPR_CONF=("$HYPR_DIR/keybinds.conf")
 ROFI_CONF="$HOME/.config/rofi/configs/keybinds.rasi"
 
 
