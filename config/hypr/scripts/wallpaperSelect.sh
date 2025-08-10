@@ -44,6 +44,8 @@ executeCommand() {
   fi
 
   ln -sf "$1" "$HOME/.current_wallpaper"
+
+  "$HOME/.config/hypr/scripts/changeColors.sh" 
 }
 
 # Show the images

@@ -1,3 +1,8 @@
+@import 'colors.css';
+@define-color color-transparent rgba(0, 0, 0, 0);
+@define-color background-buttons #1e1e2e;
+
+
 * {
   min-height: 0;
   min-width: 0;
@@ -7,42 +12,36 @@
 }
 
 window#waybar {
-     background-color: rgba(0, 0, 0, 0);
-  /* background-color: #1e1e2e; */
-  /* background-color: #181825; */
-  /* background-color: #11111b; */
-  /* background-color: rgba(24, 24, 37, 0.6); */
+  background-color: @color-transparent; 
 }
 
 /* -----------------------------------------------------
  * Workspaces 
  * ----------------------------------------------------- */
 
-
 #workspaces button {
   all: initial;
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  /* background-color: #181825; */
   transition: all 0.3s linear;
-  background-color: #1e1e2e;
-  color: #cdd6f4;
+  background-color: @background-buttons;
+  color: @foreground;
 }
 
 #workspaces button:hover {
-  color: #1e1e2e;
-  background-color: #cdd6f4;
+  color: @color0;
+  background-color: @color2;
 }
 
 #workspaces button.active {
-  background-color: #1e1e2e;
-  color: #89b4fa;
+  background-color: @color10;
+  color: @color8;
 }
 
 #workspaces button.urgent {
-  background-color: #1e1e2e;
-  color: #f38ba8;
+  background-color: @color3;
+  color: @foreground;
 }
 
 /* -----------------------------------------------------
@@ -59,68 +58,66 @@ window#waybar {
 #tray,
 #window,
 #network,
-#language{
+#language {
   padding: 0.3rem 0.6rem;
   margin: 0.4rem 0.25rem;
   border-radius: 6px;
-  /* background-color: #181825; */
-  background-color: #1e1e2e;
+  background-color: @background-buttons;
 }
 
 #custom-sep {
   padding: 0px;
-  color: #585b70;
+  color: @foreground;
 }
 
 window#waybar.empty #window {
-  background-color: transparent;
+  background-color: @color-transparent;
 }
 
 #cpu {
-  color: #94e2d5;
+  color: @color4;
 }
 
 #memory {
-  color: #cba6f7;
+  color: @color9;
 }
 
 #clock, #network, #disk {
-  color: #74c7ec;
+  color: @color6;
 }
 
 #clock.simpleclock, #temperature {
-  color: #89b4fa;
+  color: @color12;
 }
 
 #window, #language {
-  color: #cdd6f4;
+  color: @color7;
 }
 
 #pulseaudio {
-  color: #b4befe;
+  color: @color7;
 }
 
 #pulseaudio.muted {
-  color: #a6adc8;
+  color: @color7;
 }
 
 #custom-logo {
-  color: #89b4fa;
+  color: @color15;
 }
 
 #custom-power {
-  color: #f38ba8;
+  color: @color12;
 }
 
 #custom-power {margin-right: 10px;} 
 #clock {margin-left: 7px;}
-
 
 /* -----------------------------------------------------
  * Tooltips
  * ----------------------------------------------------- */
 
 tooltip {
-  background-color: #181825;
-  border: 2px solid #89b4fa;
+  background-color: @color10;
+  border: 2px solid @color15;
 }

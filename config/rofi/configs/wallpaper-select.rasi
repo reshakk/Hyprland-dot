@@ -8,7 +8,7 @@ configuration {
 }
 /* Config and colors ----------------------------------------------- */
 
-@import "../assets/default.rasi"
+@import "../assets/colors2.rasi"
 @import "../assets/fonts.rafi"
 
 /* Main Window ------------------------------------------------ */

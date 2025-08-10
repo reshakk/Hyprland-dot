@@ -1,3 +1,22 @@
+:root {
+  --color-transparent-dark: rgba(0, 0, 0, 0.8);
+  --color-shadow-dark: rgba(0, 0, 0, 0.75);
+  --color-dark1: #1e1e2e;
+  --color-dark2: #313244;
+  --color-dark3: #11111b;
+  --color-dark4: #45475a;
+  --color-dark5: #585b70;
+  --color-dark6: #7f849c;
+  --color-dark7: #6c7086;
+  --color-text1: #cdd6f4;
+  --color-text2: #89b4fa;
+  --color-text3: #f38ba8;
+  --color-text4: #a6adc8;
+  --color-text5: #74c7ec;
+  --color-text6: #eba0ac;
+  --color-text7: #f9e2af;
+}
+
 * {
   all: unset;
   font-size: 14px;
@@ -6,26 +25,26 @@
 }
 
 trough highlight {
-  background: #cdd6f4;
+  background: var(--color-text1);
 }
 
 scale trough {
   margin: 0rem 1rem;
-  background-color: #313244;
+  background-color: var(--color-dark2);
   min-height: 8px;
   min-width: 70px;
 }
 
 slider {
-  background-color: #89b4fa;
+  background-color: var(--color-text2);
 }
 
 .floating-notifications.background .notification-row .notification-background {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #313244;
+  box-shadow: 0 0 8px 0 var(--color-transparent-dark), inset 0 0 0 1px var(--color-dark2);
   border-radius: 12.6px;
   margin: 18px;
-  background-color: #1e1e2e;
-  color: #cdd6f4;
+  background-color: var(--color-dark1);
+  color: var(--color-text1);
   padding: 0;
 }
 
@@ -35,7 +54,7 @@ slider {
 }
 
 .floating-notifications.background .notification-row .notification-background .notification.critical {
-  box-shadow: inset 0 0 7px 0 #f38ba8;
+  box-shadow: inset 0 0 7px 0 var(--color-text3);
 }
 
 .floating-notifications.background .notification-row .notification-background .notification .notification-content {
@@ -43,15 +62,15 @@ slider {
 }
 
 .floating-notifications.background .notification-row .notification-background .notification .notification-content .summary {
-  color: #cdd6f4;
+  color: var(--color-text1);
 }
 
 .floating-notifications.background .notification-row .notification-background .notification .notification-content .time {
-  color: #a6adc8;
+  color: var(--color-text4);
 }
 
 .floating-notifications.background .notification-row .notification-background .notification .notification-content .body {
-  color: #cdd6f4;
+  color: var(--color-text1);
 }
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * {
@@ -60,81 +79,81 @@ slider {
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action {
   border-radius: 7px;
-  color: #cdd6f4;
-  background-color: #313244;
-  box-shadow: inset 0 0 0 1px #45475a;
+  color: var(--color-text1);
+  background-color: var(--color-dark2);
+  box-shadow: inset 0 0 0 1px var(--color-dark4);
   margin: 7px;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action:hover {
-  box-shadow: inset 0 0 0 1px #45475a;
-  background-color: #313244;
-  color: #cdd6f4;
+  box-shadow: inset 0 0 0 1px var(--color-dark4);
+  background-color: var(--color-dark2);
+  color: var(--color-text1);
 }
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action:active {
-  box-shadow: inset 0 0 0 1px #45475a;
-  background-color: #74c7ec;
-  color: #cdd6f4;
+  box-shadow: inset 0 0 0 1px var(--color-dark4);
+  background-color: var(--color-text5);
+  color: var(--color-text1);
 }
 
 .floating-notifications.background .notification-row .notification-background .close-button {
   margin: 7px;
   padding: 2px;
   border-radius: 6.3px;
-  color: #1e1e2e;
-  background-color: #f38ba8;
+  color: var(--color-dark1);
+  background-color: var(--color-text3);
 }
 
 .floating-notifications.background .notification-row .notification-background .close-button:hover {
-  background-color: #eba0ac;
-  color: #1e1e2e;
+  background-color: var(--color-text6);
+  color: var(--color-dark1);
 }
 
 .floating-notifications.background .notification-row .notification-background .close-button:active {
-  background-color: #f38ba8;
-  color: #1e1e2e;
+  background-color: var(--color-text3);
+  color: var(--color-dark1);
 }
 
 .control-center {
-  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.8), inset 0 0 0 1px #313244;
+  box-shadow: 0 0 8px 0 var(--color-transparent-dark), inset 0 0 0 1px var(--color-dark2);
   border-radius: 12.6px;
   margin: 18px;
-  background-color: #1e1e2e;
-  color: #cdd6f4;
+  background-color: var(--color-dark1);
+  color: var(--color-text1);
   padding: 14px;
 }
 
 .control-center .widget-title > label {
-  color: #cdd6f4;
+  color: var(--color-text1);
   font-size: 1.3em;
 }
 
 .control-center .widget-title button {
   border-radius: 7px;
-  color: #cdd6f4;
-  background-color: #313244;
-  box-shadow: inset 0 0 0 1px #45475a;
+  color: var(--color-text1);
+  background-color: var(--color-dark2);
+  box-shadow: inset 0 0 0 1px var(--color-dark4);
   padding: 8px;
 }
 
 .control-center .widget-title button:hover {
-  box-shadow: inset 0 0 0 1px #45475a;
-  background-color: #585b70;
-  color: #cdd6f4;
+  box-shadow: inset 0 0 0 1px var(--color-dark4);
+  background-color: var(--color-dark5);
+  color: var(--color-text1);
 }
 
 .control-center .widget-title button:active {
-  box-shadow: inset 0 0 0 1px #45475a;
-  background-color: #74c7ec;
-  color: #1e1e2e;
+  box-shadow: inset 0 0 0 1px var(--color-dark4);
+  background-color: var(--color-text5);
+  color: var(--color-dark1);
 }
 
 .control-center .notification-row .notification-background {
   border-radius: 7px;
-  color: #cdd6f4;
-  background-color: #313244;
-  box-shadow: inset 0 0 0 1px #45475a;
+  color: var(--color-text1);
+  background-color: var(--color-dark2);
+  box-shadow: inset 0 0 0 1px var(--color-dark4);
   margin-top: 14px;
 }
 
@@ -144,7 +163,7 @@ slider {
 }
 
 .control-center .notification-row .notification-background .notification.critical {
-  box-shadow: inset 0 0 7px 0 #f38ba8;
+  box-shadow: inset 0 0 7px 0 var(--color-text3);
 }
 
 .control-center .notification-row .notification-background .notification .notification-content {
@@ -152,15 +171,15 @@ slider {
 }
 
 .control-center .notification-row .notification-background .notification .notification-content .summary {
-  color: #cdd6f4;
+  color: var(--color-text1);
 }
 
 .control-center .notification-row .notification-background .notification .notification-content .time {
-  color: #a6adc8;
+  color: var(--color-text4);
 }
 
 .control-center .notification-row .notification-background .notification .notification-content .body {
-  color: #cdd6f4;
+  color: var(--color-text1);
 }
 
 .control-center .notification-row .notification-background .notification > *:last-child > * {
@@ -169,30 +188,30 @@ slider {
 
 .control-center .notification-row .notification-background .notification > *:last-child > * .notification-action {
   border-radius: 7px;
-  color: #cdd6f4;
-  background-color: #11111b;
-  box-shadow: inset 0 0 0 1px #45475a;
+  color: var(--color-text1);
+  background-color: var(--color-dark3);
+  box-shadow: inset 0 0 0 1px var(--color-dark4);
   margin: 7px;
 }
 
 .control-center .notification-row .notification-background .notification > *:last-child > * .notification-action:hover {
-  box-shadow: inset 0 0 0 1px #45475a;
-  background-color: #313244;
-  color: #cdd6f4;
+  box-shadow: inset 0 0 0 1px var(--color-dark4);
+  background-color: var(--color-dark2);
+  color: var(--color-text1);
 }
 
 .control-center .notification-row .notification-background .notification > *:last-child > * .notification-action:active {
-  box-shadow: inset 0 0 0 1px #45475a;
-  background-color: #74c7ec;
-  color: #cdd6f4;
+  box-shadow: inset 0 0 0 1px var(--color-dark4);
+  background-color: var(--color-text5);
+  color: var(--color-text1);
 }
 
 .control-center .notification-row .notification-background .close-button {
   margin: 7px;
   padding: 2px;
   border-radius: 6.3px;
-  color: #1e1e2e;
-  background-color: #eba0ac;
+  color: var(--color-dark1);
+  background-color: var(--color-text6);
 }
 
 .close-button {
@@ -200,50 +219,50 @@ slider {
 }
 
 .control-center .notification-row .notification-background .close-button:hover {
-  background-color: #f38ba8;
-  color: #1e1e2e;
+  background-color: var(--color-text3);
+  color: var(--color-dark1);
 }
 
 .control-center .notification-row .notification-background .close-button:active {
-  background-color: #f38ba8;
-  color: #1e1e2e;
+  background-color: var(--color-text3);
+  color: var(--color-dark1);
 }
 
 .control-center .notification-row .notification-background:hover {
-  box-shadow: inset 0 0 0 1px #45475a;
-  background-color: #7f849c;
-  color: #cdd6f4;
+  box-shadow: inset 0 0 0 1px var(--color-dark4);
+  background-color: var(--color-dark6);
+  color: var(--color-text1);
 }
 
 .control-center .notification-row .notification-background:active {
-  box-shadow: inset 0 0 0 1px #45475a;
-  background-color: #74c7ec;
-  color: #cdd6f4;
+  box-shadow: inset 0 0 0 1px var(--color-dark4);
+  background-color: var(--color-text5);
+  color: var(--color-text1);
 }
 
 .notification.critical progress {
-  background-color: #f38ba8;
+  background-color: var(--color-text3);
 }
 
 .notification.low progress,
 .notification.normal progress {
-  background-color: #89b4fa;
+  background-color: var(--color-text2);
 }
 
 .control-center-dnd {
   margin-top: 5px;
   border-radius: 8px;
-  background: #313244;
-  border: 1px solid #45475a;
+  background: var(--color-dark2);
+  border: 1px solid var(--color-dark4);
   box-shadow: none;
 }
 
 .control-center-dnd:checked {
-  background: #313244;
+  background: var(--color-dark2);
 }
 
 .control-center-dnd slider {
-  background: #45475a;
+  background: var(--color-dark4);
   border-radius: 8px;
 }
 
@@ -255,19 +274,19 @@ slider {
 .widget-dnd > switch {
   font-size: initial;
   border-radius: 8px;
-  background: #313244;
-  border: 1px solid #45475a;
+  background: var(--color-dark2);
+  border: 1px solid var(--color-dark4);
   box-shadow: none;
 }
 
 .widget-dnd > switch:checked {
-  background: #313244;
+  background: var(--color-dark2);
 }
 
 .widget-dnd > switch slider {
-  background: #45475a;
+  background: var(--color-dark4);
   border-radius: 8px;
-  border: 1px solid #6c7086;
+  border: 1px solid var(--color-dark7);
 }
 
 .widget-mpris {
@@ -275,11 +294,11 @@ slider {
 }
 
 .mpris-background {
-      filter: blur(10px);
+  filter: blur(10px);
 }
 
 .widget-mpris-player {
-  background: #313244;
+  background: var(--color-dark2);
   padding: 7px;
   border-radius: 8px;
   margin: 0px 10px;
@@ -287,7 +306,7 @@ slider {
 
 .widget-mpris-album-art {
   border-radius: 12px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 10px var(--color-shadow-dark);
 }
 
 /* .widget-mpris-player {margin: 0px 5px; } */
@@ -303,7 +322,7 @@ slider {
 }
 
 .control-center .widget-label > label {
-  color: #cdd6f4;
+  color: var(--color-text1);
   font-size: 2rem;
 }
 
@@ -321,11 +340,11 @@ slider {
 
 .widget-volume label {
   font-size: 1.5rem;
-  color: #74c7ec;
+  color: var(--color-text5);
 }
 
 .widget-volume trough highlight {
-  background: #74c7ec;
+  background: var(--color-text5);
 }
 
 .widget-volume trough, .widget-volume highlight, .widget-backlight trough, .widget-backlight highlight  { 
@@ -333,12 +352,12 @@ slider {
 }
 
 .widget-backlight trough highlight{
-  background: #f9e2af;
+  background: var(--color-text7);
 }
 
 .widget-backlight label {
   font-size: 1.5rem;
-  color: #f9e2af;
+  color: var(--color-text7);
 }
 
 .widget-backlight .KB {

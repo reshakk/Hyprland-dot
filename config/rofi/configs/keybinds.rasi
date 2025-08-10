@@ -9,34 +9,10 @@ configuration {
     }
 
 /*****----- Global Properties -----*****/
-@import                          "../assets/colors.rasi"
-@import				 "../assets/fonts.rasi"
+@import "../assets/colors.rasi"
+// @import "../assets/default.rasi"
+@import "../assets/fonts.rasi"
 
-* {
-    border-colour:               var(selected);
-    handle-colour:               var(selected);
-    background-colour:           var(background);
-    foreground-colour:           var(foreground);
-    alternate-background:        var(background-alt);
-    normal-background:           var(background);
-    normal-foreground:           var(foreground);
-    urgent-background:           var(urgent);
-    urgent-foreground:           var(background);
-    active-background:           var(active);
-    active-foreground:           var(background);
-    selected-normal-background:  var(selected);
-    selected-normal-foreground:  var(background);
-    selected-urgent-background:  var(active);
-    selected-urgent-foreground:  var(background);
-    selected-active-background:  var(urgent);
-    selected-active-foreground:  var(background);
-    alternate-normal-background: var(background);
-    alternate-normal-foreground: var(foreground);
-    alternate-urgent-background: var(urgent);
-    alternate-urgent-foreground: var(background);
-    alternate-active-background: var(active);
-    alternate-active-foreground: var(background);
-}
 
 /*****----- Main Window -----*****/
 window {
@@ -55,18 +31,9 @@ window {
     padding:                     0px;
     border:                      0px solid;
     border-radius:               10px;
-    border-color:                @border-colour;
+    border-color:                @border-color;
     cursor:                      "default";
-    /* Backgroud Colors */
-    background-color:            @background-colour;
-    /* Backgroud Image */
-    //background-image:          url("/path/to/image.png", none);
-    /* Simple Linear Gradient */
-    //background-image:          linear-gradient(red, orange, pink, purple);
-    /* Directional Linear Gradient */
-    //background-image:          linear-gradient(to bottom, pink, yellow, magenta);
-    /* Angle Linear Gradient */
-    //background-image:          linear-gradient(45, cyan, purple, indigo);
+    background-color:            @background-color; 
 }
 
 /*****----- Main Box -----*****/
@@ -77,7 +44,7 @@ mainbox {
     padding:                     20px;
     border:                      0px solid;
     border-radius:               0px 0px 0px 0px;
-    border-color:                @border-colour;
+    border-color:                @border-color;
     background-color:            transparent;
     children:                    [ "inputbar", "message", "custombox" ];
 }
@@ -85,8 +52,8 @@ mainbox {
 /*****----- A Custom Box -----*****/
 custombox {
     spacing:                     0px;
-    background-color:            @background-colour;
-    text-color:                  @foreground-colour;
+    background-color:            @background-color;
+    text-color:                  @foreground;
     orientation:                 horizontal;
     children:                    [ "mode-switcher", "listview" ];
 }
@@ -99,9 +66,9 @@ inputbar {
     padding:                     8px 12px;
     border:                      0px solid;
     border-radius:               8px;
-    border-color:                @border-colour;
-    background-color:            @alternate-background;
-    text-color:                  @foreground-colour;
+    border-color:                @border-color;
+    background-color:            @alternate-active-background;
+    text-color:                  @foreground;
     children:                    [ "textbox-prompt-colon", "entry" ];
 }
 
@@ -112,7 +79,7 @@ prompt {
 }
 textbox-prompt-colon {
     enabled:                     true;
-    padding:                     5px 0px;
+    padding:                     5px 5px;
     expand:                      false;
     str:                         "";
     background-color:            inherit;
@@ -168,18 +135,18 @@ listview {
     spacing:                     5px;
     margin:                      0px;
     padding:                     10px;
-    border:                      2px 2px 2px 0px;
-    border-radius:               0px 8px 8px 0px;
-    border-color:                @border-colour;
+    border:                      2px;
+    border-radius:               8px;
+    border-color:                @border-color;
     background-color:            transparent;
-    text-color:                  @foreground-colour;
+    text-color:                  @foreground;
     cursor:                      "default";
 }
 scrollbar {
     handle-width:                5px ;
-    handle-color:                @handle-colour;
+    handle-color:                @selected-urgent-background;
     border-radius:               10px;
-    background-color:            @alternate-background;
+    background-color:            @alternate-active-background;
 }
 
 /*****----- Elements -----*****/
@@ -190,9 +157,9 @@ element {
     padding:                     10px;
     border:                      0px solid;
     border-radius:               8px;
-    border-color:                @border-colour;
+    border-color:                @border-color;
     background-color:            transparent;
-    text-color:                  @foreground-colour;
+    text-color:                  @foreground;
     cursor:                      pointer;
 }
 element normal.normal {
@@ -256,15 +223,15 @@ mode-switcher{
     padding:                     0px 0px;
     border:                      0px solid;
     border-radius:               8px 0px 0px 8px;
-    border-color:                @border-colour;
-    background-color:            @alternate-background;
-    text-color:                  @foreground-colour;
+    border-color:                @border-color;
+    background-color:            @alternate-active-background;
+    text-color:                  @foreground;
 }
 button {
     padding:                     0px 20px 0px 20px;
     border:                      0px 2px 0px 0px;
     border-radius:               0px 0px 0px 0px;
-    border-color:                @border-colour;
+    border-color:                @border-color;
     background-color:            transparent;
     text-color:                  inherit;
     vertical-align:              0.5;
@@ -274,7 +241,7 @@ button {
 button selected {
     border:                      2px 0px 2px 2px;
     border-radius:               8px 0px 0px 8px;
-    border-color:                @border-colour;
+    border-color:                @border-color;
     background-color:            var(selected-normal-foreground);
     text-color:                  var(selected-normal-background);
 }
@@ -286,21 +253,21 @@ message {
     padding:                     0px;
     border:                      0px solid;
     border-radius:               0px 0px 0px 0px;
-    border-color:                @border-colour;
+    border-color:                @border-color;
     background-color:            transparent;
-    text-color:                  @foreground-colour;
+    text-color:                  @foreground;
 }
 textbox {
     padding:                     12px;
     border:                      0px solid;
     border-radius:               8px;
-    border-color:                @border-colour;
-    background-color:            @alternate-background;
-    text-color:                  @foreground-colour;
+    border-color:                @border-color;
+    background-color:            @alternate-active-background;
+    text-color:                  @foreground;
     vertical-align:              0.5;
     horizontal-align:            0.0;
     highlight:                   none;
-    placeholder-color:           @foreground-colour;
+    placeholder-color:           @foreground;
     blink:                       true;
     markup:                      true;
 }
@@ -308,7 +275,7 @@ error-message {
     padding:                     10px;
     border:                      2px solid;
     border-radius:               8px;
-    border-color:                @border-colour;
-    background-color:            @background-colour;
-    text-color:                  @foreground-colour;
+    border-color:                @border-color;
+    background-color:            @background-color;
+    text-color:                  @foreground;
 }
