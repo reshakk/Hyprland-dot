@@ -1,8 +1,9 @@
 #!/bin/bash
 
-HYPR_DIR=("$HOME/.config/hypr/configs")
-HYPR_CONF=("$HYPR_DIR/keybinds.conf")
+HYPR_DIR="$HOME/.config/hypr/configs"
+HYPR_CONF="$HYPR_DIR/keybinds.conf"
 ROFI_CONF="$HOME/.config/rofi/configs/keybinds.rasi"
+VIM_KEYB="$HOME/.config/nvim/keybinds.txt"
 
 # Confirmation CMD
 confirm_cmd() {
@@ -54,9 +55,17 @@ keyb_hypr() {
   fi
 }
 
+keyb_vim(){
+  all_text=$(sed 's/^[[:space:]]*//; /^[[:space:]]*$/d;' $VIM_KEYB )
+
+  # Show menu and get selection
+  CHOICE=$(printf '%s\n' "${all_text[@]}" | rofi -dmenu -i -markup-rows -p "Vim Keybinds:" -theme ${ROFI_CONF})
+
+}
+
 chosen="$(confirm_keyb)"
 if [[ "$chosen" == "vim" ]]; then
-  break
+  keyb_vim
 elif [[ "$chosen" == "hyprland" ]]; then
   keyb_hypr
 else
