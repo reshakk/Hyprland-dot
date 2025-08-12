@@ -38,20 +38,22 @@ echo -e "\e[35m
 \e[0m"
 printf "\n%.0s" {1..1}
 
-DIRS="
-  btop
-  gedit
-  hypr
-  kitty
-  rofi
-  swaync
-  waybar
-  Thunar
-  nvim
-  gtk-3.0
-  gtk-4.0
-  wal
-"
+# DIRS="
+#   btop
+#   gedit
+#   hypr
+#   kitty
+#   rofi
+#   swaync
+#   waybar
+#   Thunar
+#   nvim
+#   gtk-3.0
+#   gtk-4.0
+#   wal
+# "
+
+DIRS="$(ls -d config/*)"
 
 for DIR2 in $DIRS; do
 	DIRPATH=~/.config/"$DIR2"
