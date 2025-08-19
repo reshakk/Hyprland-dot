@@ -55,6 +55,7 @@ window#waybar {
 #custom-notification,
 #cpu, #disk, #memory, #temperature,
 #custom-system,
+#custom-timer,
 #tray,
 #window,
 #network,
@@ -70,7 +71,7 @@ window#waybar {
   color: @foreground;
 }
 
-#custom-notification, #custom-system {
+#custom-notification, #custom-system, #custom-timer {
   color: @color4;
 }
 

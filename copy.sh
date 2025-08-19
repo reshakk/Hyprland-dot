@@ -115,6 +115,7 @@ fi
 
 
 chmod +x ~/.config/hypr/scripts/* 2>&1 | tee -a "$LOG"
+chmod +x ~/.config/waybar/modules/* 2>&1 | tee -a "$LOG"
 
 
 printf "\n%.0s" {1..4}

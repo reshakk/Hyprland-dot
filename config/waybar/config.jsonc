@@ -13,6 +13,7 @@
   "modules-left": [
     "clock",
     "clock#simpleclock",
+    "custom/timer",
     "hyprland/window"
   ],
 
