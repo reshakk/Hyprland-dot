@@ -31,6 +31,7 @@
 	
   //Modules Left
   "hyprland/window": {
+	"max-length": 25,
     "format": "{title}"
   },
   
@@ -59,7 +60,7 @@
 
   "custom/timer": {
     "tooltip": false,
-    "min-length": 5,
+    "max-length": 10,
     "exec": "$HOME/.config/waybar/modules/waybar-timer.sh",
     "on-click": "date --date='5 minutes' +%s > /var/tmp/waybar_timer",
     "on-click-right": "echo READY > /var/tmp/waybar_timer",
