@@ -31,7 +31,7 @@
 	
   //Modules Left
   "hyprland/window": {
-	"max-length": 25,
+    "max-length": 25,
     "format": "{title}"
   },
   
