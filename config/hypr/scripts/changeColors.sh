@@ -27,6 +27,8 @@ cp "$HOME/.cache/wal/colors-waybar.css" "$HOME/.config/waybar/colors.css"
 
 cp "$HOME/.cache/wal/colors-kitty.conf" "$HOME/.config/kitty/colors.conf"
 
+cp "$HOME/.cache/wal/colors.css" "$HOME/.config/swaync/colors.css"
+
 cp "$HOME/.cache/wal/hyprland" "$HOME/.config/hypr/configs/colors.conf"
 
 "$HOME/.config/hypr/scripts/refresh.sh"
