@@ -3,7 +3,7 @@
 HYPR_DIR="$HOME/.config/hypr/configs"
 HYPR_CONF="$HYPR_DIR/keybinds.conf"
 ROFI_CONF="$HOME/.config/rofi/configs/keybinds.rasi"
-VIM_KEYB="$HOME/.config/nvim/keybinds.txt"
+VIM_KEYB="$HOME/.config/nvim/nvim-keybinds.md"
 
 # Confirmation CMD
 confirm_cmd() {

@@ -6,7 +6,7 @@
 
 /*****----- Configuration -----*****/
 configuration {
-    }
+}
 
 /*****----- Global Properties -----*****/
 @import "../assets/colors.rasi"
@@ -215,7 +215,7 @@ element-text {
 
 /*****----- Mode Switcher -----*****/
 mode-switcher{
-    enabled:                     true;
+    enabled:                     false;
     expand:                      false;
     orientation:                 vertical;
     spacing:                     0px;
