@@ -1,4 +1,3 @@
-
 ## GLOBAL
 
     :h[elp] keyword - open help for keyword
@@ -6,6 +5,7 @@
     :clo[se] - close current pane
     :ter[minal] - open a terminal window
     K - open man page for word under the cursor
+    space + ? - keybinds for nvim
 
 ## EXITING
 

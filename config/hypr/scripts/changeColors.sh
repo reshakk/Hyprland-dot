@@ -23,6 +23,9 @@ for rpg in "${css_variable[@]}"; do
   sed -i "s|$output_str|$source_str|g" "$rofi_output"
 done
 
+COLOR="$(sed -n '2p' .cache/wal/colors | sed -e 's/#//g')"
+sed -i "s|COLOR=\"[^\"]*\"|COLOR=\"#$COLOR\"|g" "$HOME/.config/hypr/scripts/rofi_keybinds.sh"
+
 cp "$HOME/.cache/wal/colors-waybar.css" "$HOME/.config/waybar/colors.css"
 
 cp "$HOME/.cache/wal/colors-kitty.conf" "$HOME/.config/kitty/colors.conf"

@@ -4,25 +4,25 @@
     --wallpaper: url("/home/reshkk/.current_wallpaper");
 
     /* Special */
-    --background: #0B1118;
-    --foreground: #c6c9c7;
-    --cursor: #c6c9c7;
+    --background: #0A060D;
+    --foreground: #9eaac2;
+    --cursor: #9eaac2;
 
     /* Colors */
-    --color0: #0B1118;
-    --color1: #295C4E;
-    --color2: #314C51;
-    --color3: #50635E;
-    --color4: #6B7375;
-    --color5: #678C54;
-    --color6: #808F71;
-    --color7: #c6c9c7;
-    --color8: #8a8c8b;
-    --color9: #295C4E;
-    --color10: #314C51;
-    --color11: #50635E;
-    --color12: #6B7375;
-    --color13: #678C54;
-    --color14: #808F71;
-    --color15: #c6c9c7;
+    --color0: #0A060D;
+    --color1: #2C306F;
+    --color2: #4C366E;
+    --color3: #434971;
+    --color4: #3B3383;
+    --color5: #473787;
+    --color6: #3B5D8E;
+    --color7: #9eaac2;
+    --color8: #6e7687;
+    --color9: #2C306F;
+    --color10: #4C366E;
+    --color11: #434971;
+    --color12: #3B3383;
+    --color13: #473787;
+    --color14: #3B5D8E;
+    --color15: #9eaac2;
 }

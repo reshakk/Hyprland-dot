@@ -12,4 +12,20 @@
 	<startup-notify/>
 	<directories/>
 </action>
+<action>
+	<icon>clipboard</icon>
+	<name>Copy directory</name>
+	<submenu></submenu>
+	<unique-id>1730572291852956-2</unique-id>
+	<command>wl-copy %f ; notify-send &quot;Copied to Clipboard&quot; %f -i clipboard</command>
+	<description>Copy current selected file&apos;s directory (with name) to the clipboard</description>
+	<range>*</range>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
 </actions>

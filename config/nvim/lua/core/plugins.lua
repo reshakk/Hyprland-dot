@@ -24,6 +24,9 @@ require("lazy").setup({
   "preservim/vimux",
   "christoomey/vim-tmux-navigator",
 
+  -- Hot keys
+  "folke/which-key.nvim",
+
   "nvim-treesitter/nvim-treesitter",
   "norcalli/nvim-colorizer.lua",
 
@@ -31,5 +34,14 @@ require("lazy").setup({
     "nvim-telescope/telescope.nvim", tag = "0.1.4",
     dependencies = { "nvim-lua/plenary.nvim" }
   },
+
+  {
+    "romgrk/barbar.nvim",
+    dependencies = {
+      'lewis6991/gitsigns.nvim',
+      'nvim-tree/nvim-web-devicons',
+    },
+  }
+
 })
 
