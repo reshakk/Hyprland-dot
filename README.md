@@ -2,7 +2,7 @@
 Another dotfiles for Arch+Hyprland
 
 # Preview
-![image](https://github.com/reshakk/Arch-dotfiles/blob/main/assets/Hyprland.png)
+![image](https://github.com/reshakk/Arch-dotfiles/blob/main/assets/hyprland.png)
 
 ### Installation
 ```
@@ -11,7 +11,7 @@ chmod +x ./copy.sh
 ./copy.sh
 ```
 > [!TIP]
-> If you already have some configs, my script will create backups of all of them.
+> `Win + H` - opens menu with hotkeys (includes: nvim, hyprland, tmux).
 
 <div align="center">
     <h2>• overview •</h2>
@@ -31,20 +31,19 @@ chmod +x ./copy.sh
 
   - **Feautures**: App-launcher, powermenu, wallpaper-select, clipboard, keybinds for Hyprland\vim, alt-tab (like on windows) 
   - **Inspired by**: [powermenu and launcher](https://github.com/adi1090x/rofi), [keybinds](https://github.com/jason9075/rofi-hyprland-keybinds-cheatsheet)
-  ![image](https://github.com/reshakk/Arch-dotfiles/blob/main/assets/Launcher.png)
-  ![image](https://github.com/reshakk/Arch-dotfiles/blob/main/assets/Clipboard.png)
-  ![image](https://github.com/reshakk/Arch-dotfiles/blob/main/assets/Wallpaper-select.png)
+  ![image](https://github.com/reshakk/Arch-dotfiles/blob/main/assets/rofi-main.png)
+  ![image](https://github.com/reshakk/Arch-dotfiles/blob/main/assets/rofi-powermenu.png)
 </details>
 <details>
   <summary>Waybar</summary>
   
   - **Inspired by**: https://github.com/brunoanesio/waybar-config   
     
-  ![image](https://github.com/reshakk/Arch-dotfiles/blob/main/assets/Waybar.png)
+  ![image](https://github.com/reshakk/Arch-dotfiles/blob/main/assets/waybar.png)
 </details>
 <details>
   <summary>Swaync</summary>
     
   - **Theme**: https://github.com/catppuccin/swaync
-  ![image](https://github.com/reshakk/Arch-dotfiles/blob/main/assets/Swaync.png)
+  ![image](https://github.com/reshakk/Arch-dotfiles/blob/main/assets/swaync.png)
 </details>
