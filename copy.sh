@@ -113,6 +113,7 @@ else
 	fi
 fi
 
+cp -r ./keybinds "$HOME/.local/"
 
 chmod +x ~/.config/hypr/scripts/* 2>&1 | tee -a "$LOG"
 chmod +x ~/.config/waybar/modules/* 2>&1 | tee -a "$LOG"
