@@ -105,12 +105,7 @@ if [ -d wallpapers ]; then
 	mkdir -p ~/Pictures
 	cp -r wallpapers ~/Pictures/ && { echo "Some wallpapers are copied."; } || { echo "Failed to copy wallpapers."; } 2>&1 | tee -a "$LOG"
 else
-	if git clone --depth 1 https://github.com/reshakk/wallpapers.git; then
-		mkdir -p ~/Pictures
-		cp -r wallpapers ~/Pictures/ && { echo "Some wallpapers are copied."; } || { echo "Failed to copy wallpapers."; } 2>&1 | tee -a "$LOG"
-	else
-		echo "Failed to download wallpapers."
-	fi
+  echo "Directory with wallpapers doesn't exist."
 fi
 
 cp -r ./keybinds "$HOME/.local/"

@@ -16,7 +16,7 @@ else
 	if [ -f "/var/tmp/waybar_timer" ]; then
 		echo "FINISHED" > /var/tmp/waybar_timer
 		echo ""
-    notify-send --urgency=critical "Timer is over"
+    notify-send --urgency=critical " " "Timer is over"
 	else
 		echo "READY" > /var/tmp/waybar_timer
 		echo ""

@@ -7,7 +7,7 @@ VIM_KEYB="$KEYB_DIR/nvim-keybinds.md"
 HYPR_CONF="$HOME/.config/hypr/configs/keybinds.conf"
 TMUX_KEYB="$KEYB_DIR/tmux-commands.md"
 
-COLOR="#2C306F"
+COLOR="#8DA350"
 
 # Confirmation CMD
 confirm_cmd() {
@@ -102,4 +102,3 @@ elif [[ "$chosen" == "tmux" ]]; then
 else
     exit 0
 fi
-
