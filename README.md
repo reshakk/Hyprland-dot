@@ -1,6 +1,8 @@
 # Hyprland-dotfiles
 Another dotfiles for Arch+Hyprland
 
+All dependencies\packages and installation script can be found [here](https://github.com/reshakk/Arch-sez)
+
 # Preview
 ![image](https://github.com/reshakk/Arch-dotfiles/blob/main/assets/hyprland.png)
 
