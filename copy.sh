@@ -38,22 +38,17 @@ echo -e "\e[35m
 \e[0m"
 printf "\n%.0s" {1..1}
 
-# DIRS="
-#   btop
-#   gedit
-#   hypr
-#   kitty
-#   rofi
-#   swaync
-#   waybar
-#   Thunar
-#   nvim
-#   gtk-3.0
-#   gtk-4.0
-#   wal
-# "
-
-DIRS="$(ls -d config/*)"
+DIRS="
+   btop
+   hypr
+   kitty
+   rofi
+   swaync
+   waybar
+   gtk-3.0
+   gtk-4.0
+   matugen
+"
 
 for DIR2 in $DIRS; do
 	DIRPATH=~/.config/"$DIR2"
@@ -68,7 +63,7 @@ for DIR2 in $DIRS; do
 					if [ $? -eq 0 ]; then
 						echo "Backed up $DIR2 to $DIRPATH-backup-$BACKUP_DIR." 2>&1 | tee -a "$LOG"
 						
-						cp -r config/"$DIR2" ~/.config/"$DIR2" 2>&1 | tee -a "$LOG"
+						cp -r "config/$DIR2" ~/.config/"$DIR2" 2>&1 | tee -a "$LOG"
 						if [ $? -eq 0 ]; then
 							echo "Replaced $DIR2 with new configuration." 2>&1 | tee -a "$LOG"
 						else
@@ -91,7 +86,7 @@ for DIR2 in $DIRS; do
 			esac
 		done
 	else
-		cp -r config/"$DIR2" ~/.config/"$DIR2" 2>&1 | tee -a "$LOG"
+		cp -r "config/$DIR2" ~/.config/"$DIR2" 2>&1 | tee -a "$LOG"
 		if [ $? -eq 0 ]; then
 			echo "Copy completed for $DIR2." 2>&1 | tee -a "$LOG"
 		else
