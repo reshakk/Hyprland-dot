@@ -1,0 +1,128 @@
+@import 'colors.css';
+@define-color color-transparent rgba(0, 0, 0, 0);
+@define-color background-buttons #1e1e2e;
+
+
+* {
+  min-height: 0;
+  min-width: 0;
+  font-family: "JetBrainsMono NFP";
+  font-size: 14px;
+  font-weight: 600;
+}
+
+window#waybar {
+  background-color: @color-transparent; 
+}
+
+/* -----------------------------------------------------
+ * Workspaces 
+ * ----------------------------------------------------- */
+
+#workspaces button {
+  all: initial;
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  transition: all 0.3s linear;
+  background-color: @background;
+  color: @on_primary;
+}
+
+#workspaces button:hover {
+  color: @source_color;
+  background-color: @surface_container_low;
+}
+
+#workspaces button.active {
+  background-color: @surface_bright;
+  color: @source_color;
+}
+
+#workspaces button.urgent {
+  background-color: @surface_bright;
+  color: @source_color;
+}
+
+/* -----------------------------------------------------
+ * Modules
+ * ----------------------------------------------------- */
+
+#clock,
+#pulseaudio,
+#custom-logo,
+#custom-power,
+#custom-notification,
+#cpu, #disk, #memory, #temperature,
+#custom-system,
+#custom-timer,
+#tray,
+#window,
+#network,
+#language {
+  padding: 0.3rem 0.6rem;
+  margin: 0.4rem 0.25rem;
+  border-radius: 6px;
+  background-color: @background;
+}
+
+#custom-sep {
+  padding: 0px;
+  color: @source-color;
+}
+
+#custom-notification, #custom-system, #custom-timer {
+  color: @secondary;
+}
+
+window#waybar.empty #window {
+  background-color: @color-transparent;
+}
+
+#cpu, #tray {
+  color: @tertiary;
+}
+
+#memory {
+  color: @secondary;
+}
+
+#clock, #network, #disk {
+  color: @source_color;
+}
+
+#clock.simpleclock, #temperature {
+  color: @secondary;
+}
+
+#window, #language {
+  color: @tertiary;
+}
+
+#pulseaudio {
+  color: @source_color;
+}
+
+#pulseaudio.muted {
+  color: @source_color;
+}
+
+#custom-logo {
+  color: @source_color;
+}
+
+#custom-power {
+  color: @source_color;
+}
+
+#custom-power {margin-right: 10px;} 
+#clock {margin-left: 7px;}
+
+/* -----------------------------------------------------
+ * Tooltips
+ * ----------------------------------------------------- */
+
+tooltip {
+  background-color: @background;
+  border: 2px solid @source_color;
+}
